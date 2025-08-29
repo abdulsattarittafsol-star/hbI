@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Banking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background: #006f5f;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    header .menu {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    /* Login Box */
+    .login-box {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .login-box h2 {
+      color: #006f5f;
+      margin-bottom: 20px;
+    }
+
+    .login-box label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 14px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box .links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    .login-box button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background: #006f5f;
+      color: white;
+    }
+
+    .signup-btn {
+      background: #ccc;
+      color: #333;
+    }
+
+    .open-account {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .open-account a {
+      color: #006f5f;
+      text-decoration: none;
+    }
+
+    /* Notice Section */
+    .notice {
+      flex: 1;
+    }
+
+    .notice h2 {
+      color: #006f5f;
+      margin-bottom: 15px;
+    }
+
+    .notice ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #006f5f;
+    }
+
+    .notice img {
+      margin-top: 20px;
+      width: 200px;
+    }
+
+    /* Download Section */
+    .download {
+      margin-top: 20px;
+    }
+
+    .download img {
+      width: 120px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f0f0f0;
+      font-size: 13px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Internet Banking</h1>
+    <div class="menu">☰</div>
+  </header>
+
+  <div class="container">
+    <!-- Left: Login -->
+    <div class="login-box">
+      <h2>Login</h2>
+      <label for="login-id">Login ID</label>
+      <input type="text" id="login-id" placeholder="Enter Login ID">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <div class="links">
+        <a href="#">Forgot Login ID?</a>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button class="signup-btn">Sign up</button>
+      <button class="login-btn">Login</button>
+
+      <div class="open-account">
+        Click <a href="#">here</a> to open Digital Account
+      </div>
+
+      <div class="download">
+        <p>Download Mobile App</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Huawei_AppGallery_badge_EN.svg" alt="Huawei AppGallery">
+      </div>
+    </div>
+
+    <!-- Right: Notice -->
+    <div class="notice">
+      <h2>Important Notice for Digital Banking!</h2>
+      <ul>
+        <li>Biometric verification is now required on sign-up & new device registration.</li>
+        <li>Sign-up & addition of new beneficiaries are only available via Mobile Banking.</li>
+        <li>A 2-hour wait period applies after login ID or password change and limit enhancement.</li>
+      </ul>
+
+      <img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Security Icon">
+    </div>
+  </div>
+
+  <footer>
+    Terms and Conditions | © 2025 All Rights Reserved
+  </footer>
+</body>
+</html>
